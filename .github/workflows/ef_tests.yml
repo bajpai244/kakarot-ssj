@@ -39,6 +39,7 @@ jobs:
       - name: Create empty skip file
         if: github.event_name == 'workflow_dispatch'
         run: |
+          rm blockchain-tests-skip.yml
           echo 'filename:' >> blockchain-tests-skip.yml
           echo '  None:' >> blockchain-tests-skip.yml
           echo '    - None' >> blockchain-tests-skip.yml
