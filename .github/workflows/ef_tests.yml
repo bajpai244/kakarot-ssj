@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  # trunk-ignore(yamllint/empty-values)
   workflow_dispatch:
 
 concurrency:
